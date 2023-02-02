@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+h1 {
+    color: #426696;
+    font-weight: 600;
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+
+
+h3 {
+    color: #426696;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
 main {
     min-height: 100vh;
     background: linear-gradient(to right top, #65dfc9, #6cdbeb);
@@ -12,9 +27,16 @@ main {
     justify-content: center;
 }
 
+.user img {
+    height: 90px;
+    width: 75px;
+    border-radius: 50%;
+}
+
 .glass {
+    display: flex;
     background: white;
-    min-height: 80vh;
+    min-height: 85vh;
     width: 60%;
     background: linear-gradient(
     to right bottom,
@@ -50,12 +72,53 @@ main {
     left: 10%;
 }
 
+.dashboard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+    );
+    border-radius:2rem;
+}
 
+.link {
+    display: flex;
+    margin: 0rem 0rem;
+    padding: 1rem 5rem;
+    align-items: center;
+}
 
+.link h2 {
+    padding: 0rem 2rem;
+}
 
+.games {
+    flex: 2;
+}
 
+.pro {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    border-radius: 2rem;
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
 
+.pro img {
+    position: absolute;
+    top: -10%;
+    right: 10%;
+}
 
+.pro h2 {
+    width: 40%;
+}
 
 
 
