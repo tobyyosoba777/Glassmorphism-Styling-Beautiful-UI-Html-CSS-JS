@@ -152,7 +152,7 @@ main {
 
 
 @media screen and (max-width:950px) {
-    body {
+    /* body {
         background: linear-gradient(to right top, #65dfc9, #6cdbeb);
     }
 
@@ -165,8 +165,8 @@ main {
     }
 
     .glass {
-        /* min-height: 60vh; */
-        /* width: 55%; */
-    }
+        min-height: 60vh;
+        width: 55%;
+    } */
 
 }
