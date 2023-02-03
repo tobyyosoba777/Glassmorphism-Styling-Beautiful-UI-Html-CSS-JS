@@ -10,8 +10,12 @@ h1 {
     font-size: 3rem;
     opacity: 0.8;
 }
-
-
+h2,
+p {
+    color: #688ec6;
+    font-weight: 500;
+    opacity: 0.8;
+}
 
 h3 {
     color: #426696;
@@ -20,6 +24,7 @@ h3 {
 }
 
 main {
+    font-family: "poppins", sans-serif;
     min-height: 100vh;
     background: linear-gradient(to right top, #65dfc9, #6cdbeb);
     display: flex;
@@ -28,15 +33,15 @@ main {
 }
 
 .user img {
-    height: 90px;
-    width: 75px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
 }
 
 .glass {
     display: flex;
     background: white;
-    min-height: 85vh;
+    max-height: 85vh;
     width: 60%;
     background: linear-gradient(
     to right bottom,
@@ -63,7 +68,7 @@ main {
 
 .circle1 {
     top: 5%;
-    right: 10%;
+    right: 15%;
     /* background: red; */
 }
 
@@ -118,21 +123,114 @@ main {
 
 .pro h2 {
     width: 40%;
+    color: #fff;
+    font-weight: 600;
 }
 
+/* GGAMES*/
 
+.status {
+    margin-bottom: 3rem;
+}
 
+.status input {
+    background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+    );
+    border: none;
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
 
+.games {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
+.card1, .card2, .card3 {
+    display: flex;
+    padding: 0.2rem;
+    background: linear-gradient(to left top,
+    rgba(255,255,255, 0.8),
+    rgba(255,255,255, 0.5)
+    );
+    border-radius: 1rem;
+    margin: 2rem 0rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    justify-content: space-between;
+}
 
+.progress1{
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
 
+.progress1::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 40%;
+}
 
+.progress2 {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
 
+.progress2::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 60%;
+}
 
+.progress3 {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    height: 25%;
+    width: 100%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
 
+.progress3::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 25%;
+}
 
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-
+.percentage {
+    font-weight: bold;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 
 
