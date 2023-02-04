@@ -10,11 +10,23 @@ h1 {
     font-size: 3rem;
     opacity: 0.8;
 }
+
+.link a,
+a {
+    text-decoration: none;
+
+}
+
 h2,
-p {
+p,
+a {
     color: #688ec6;
     font-weight: 500;
     opacity: 0.8;
+}
+
+a:hover {
+    color: #1c77ff;
 }
 
 h3 {
@@ -99,6 +111,14 @@ main {
     align-items: center;
 }
 
+.link:hover {
+    transition: 0.3s;
+    font-size: 1.2rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    color:#1c77ff;
+}
+
 .link h2 {
     padding: 0rem 2rem;
 }
@@ -116,8 +136,10 @@ main {
 }
 
 .pro img {
+    width: 140px;
+    height: 140px;
     position: absolute;
-    top: -10%;
+    top: -20%;
     right: 10%;
 }
 
@@ -154,6 +176,7 @@ main {
 
 .card1, .card2, .card3 {
     display: flex;
+    text-align: center;
     padding: 0.2rem;
     background: linear-gradient(to left top,
     rgba(255,255,255, 0.8),
@@ -163,6 +186,26 @@ main {
     margin: 2rem 0rem;
     box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
     justify-content: space-between;
+}
+
+.card1:hover, .card2:hover, .card3:hover {
+    transition: 0.4s;
+    height: 7.5rem;
+    padding: 0.1rem;
+    font-size: 1.13rem;
+    z-index: 99;
+}
+
+.card1 h2:hover {
+    color: red;
+}
+
+.card2 h2:hover {
+    color: #ff5100;
+}
+
+.card3 h2:hover {
+    color: darkblue;
 }
 
 .progress1{
@@ -250,6 +293,7 @@ main {
 
 
 @media screen and (max-width:950px) {
+
     /* body {
         background: linear-gradient(to right top, #65dfc9, #6cdbeb);
     }
