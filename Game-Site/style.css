@@ -192,7 +192,7 @@ main {
 
 .card1:hover, .card2:hover, .card3:hover {
     transition: 0.3s;
-    height: 7.5rem;
+    height: 8.5rem;
     padding: 0.1rem;
     font-size: 1.13rem;
 }
