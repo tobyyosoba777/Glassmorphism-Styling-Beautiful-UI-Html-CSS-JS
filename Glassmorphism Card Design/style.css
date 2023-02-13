@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Tinos&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,11 +10,15 @@
     font-size: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     display: flex;
     width: 100%;
     height: 100vh;
-    background-image: url(./images/back.png);
+    background-image: url(./images/tt.jpg);
     background-position: center;
     background-size: cover;
     align-items: center;
@@ -23,9 +32,9 @@
     text-align: center;
     padding: 50px 35px;
     border: 1px solid rgba(255,255,255,0.3);
-    background: rgba(255,255,255,0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background: rgba(255,255,255,0.25);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(255, 0, 179, 0.5);
     backdrop-filter: blur(5px);
 }
 
@@ -35,13 +44,18 @@
 }
 
 .card h2 {
+    font-family: 'Lobster Two', cursive;
     font-size: 40px;
     font-weight: 600;
     margin-top: 20px;
 }
 
 .card p {
-    font-size: 18px;
+    /* font-family: 'Crete Round', serif; */
+    font-family: 'Tinos', serif;
+    /* font-family: 'Lobster Two', cursive; */
+    font-weight: 700;
+    font-size: 20px;
     margin: 10px auto;
     max-width: 330px;
 }
@@ -53,7 +67,19 @@
     transition: background 0.5s;
 }
 
-.card .links img:hover {
+.card .links .telegram:hover {
+    background: #0044ff;
+}
+
+.card .links .twitter:hover {
+    background: #ffffff;
+}
+
+.card .links .whatsapp:hover {
+    background: #3cff00;
+}
+
+.card .links .insta:hover {
     background: #ff01cf;
 }
 
